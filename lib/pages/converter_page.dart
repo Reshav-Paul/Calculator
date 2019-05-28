@@ -164,7 +164,7 @@ class _ConversionPageState extends State<ConversionPage> {
                                 builder: (BuildContext context) {
                                   if (selectedType == "Temperature")
                                     return KeyPad(
-                                      currentValue: inputVal,
+                                      currentValue: outputVal,
                                       shouldTakeNegative: true,
                                     );
                                   else if (selectedType == "Base")
@@ -175,7 +175,7 @@ class _ConversionPageState extends State<ConversionPage> {
                                       shouldTakeExponent: false,
                                     );
                                   else
-                                    return KeyPad(currentValue: inputVal);
+                                    return KeyPad(currentValue: outputVal);
                                 }).then<String>((returnVal) {
                               if (returnVal != null)
                                 changeOutputValue(returnVal);
