@@ -169,7 +169,7 @@ class _ConversionPageState extends State<ConversionPage> {
                                     );
                                   else if (selectedType == "Base")
                                     return KeyPad(
-                                      currentValue: inputVal,
+                                      currentValue: outputVal,
                                       shouldTakeDouble: false,
                                       shouldTakeNegative: false,
                                       shouldTakeExponent: false,
