@@ -158,6 +158,8 @@ class _ConversionPageState extends State<ConversionPage> {
                       new Expanded(
                         flex: 6,
                         child: new InkWell(
+                          highlightColor: Colors.transparent,
+                          splashColor: Colors.transparent,
                           onTap: () {
                             showDialog<String>(
                                 context: context,
